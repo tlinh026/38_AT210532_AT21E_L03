@@ -1,14 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void printMatrix(int a, int matran[a][a])
-{
+void printMatrix(int a, int matrix[a][a]) {
     int i, j;
-    for(i=0; i<a; i++)
-    {
-        for (j=0; j<a; j++)
-        {
-            printf("%5d ", matran[i][j]);
+    for(i=0; i<a; i++) {
+        for (j=0; j < a; j++) {
+            printf("%5d ", matrix[i][j]);
         }
         if (i != a-1)
         {
@@ -17,8 +14,7 @@ void printMatrix(int a, int matran[a][a])
     }
 }
 
-int main()
-{
+int main() {
     int i=0, j=0;
     int n;
     int x=1;
